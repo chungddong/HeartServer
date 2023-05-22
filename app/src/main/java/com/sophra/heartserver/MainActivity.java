@@ -58,10 +58,12 @@ public class MainActivity extends Activity {
     private SensorEventListener msensorEventListner = new SensorEventListener() {
         @Override
         public void onSensorChanged(SensorEvent sensorEvent) {
+            text_bpm.setText(String.valueOf(sensorEvent.values[0]));
             if(sensorEvent.sensor.getType() == Sensor.TYPE_HEART_RATE)
             {
                 String msg = "" + sensorEvent.values[0];
-                text_bpm.setText(msg);
+
+                text_bpm.setText(String.valueOf(sensorEvent.values[0]));
             }
         }
 
