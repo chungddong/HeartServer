@@ -55,7 +55,7 @@ public class MainActivity extends Activity {
     }
 
     private void sendDataToGoogleSheet(float bpms) {
-        String scriptURL = "https://script.google.com/macros/s/AKfycby_KS2B6Wux73MycQl7DPVJuLtWFpHGKnoLMrd_eKTb1lrnRvIcaK0zuHesA5PF8LTRwQ/exec";
+        String scriptURL = "https://script.google.com/macros/s/AKfycbyQAwb5bsVVh6MfU8V6DBqTApkqmc1moHqd4kmIzIRhb_kKARu7L6XZNP3M7AirfEHpeA/exec";
         String name = "현재심박수";
         float bpm = bpms;
 
